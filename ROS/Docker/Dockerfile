@@ -4,4 +4,4 @@ RUN apt-get update && apt-get install -y ros-melodic-fetch-gazebo-demo \
     terminator \
     ros-melodic-ros-tutorials
 
-ENTRYPOINT [ "bash" ]
+ENTRYPOINT [ "bash", "--init-file", "/opt/ros/melodic/setup.bash" ]
